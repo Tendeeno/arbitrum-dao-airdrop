@@ -1,961 +1,961 @@
 [
- {
-   "id": 1,
-   "daoName": "TREASURE",
-   "airdropAmount": "8,000,000.00",
-   "token": "MAGIC",
-   "cg-id": "magic"
- },
- {
-   "id": 2,
-   "daoName": "GMX",
-   "airdropAmount": "8,000,000.00",
-   "token": "GMX",
-   "cg-id": "gmx"
- },
- {
-   "id": 3,
-   "daoName": "UNISWAP",
-   "airdropAmount": "4,378,188.00",
-   "token": "UNI",
-   "cg-id": "uniswap"
- },
- {
-   "id": 4,
-   "daoName": "SUSHISWAP",
-   "airdropAmount": "4,249,418.00",
-   "token": "SUSHI",
-   "cg-id": "sushi"
- },
- {
-   "id": 5,
-   "daoName": "DOPEX",
-   "airdropAmount": "3,863,107.00",
-   "token": "DPX",
-   "cg-id": "dopex"
- },
- {
-   "id": 6,
-   "daoName": "CURVE",
-   "airdropAmount": "3,476,796.00",
-   "token": "CRV",
-   "cg-id": "curve-dao-token"
- },
- {
-   "id": 7,
-   "daoName": "RADIANT CAPITAL",
-   "airdropAmount": "3,348,026.00",
-   "token": "RDNT",
-   "cg-id": "radiant-capital"
- },
- {
-   "id": 8,
-   "daoName": "BALANCER",
-   "airdropAmount": "3,090,486.00",
-   "token": "BAL",
-   "cg-id": "balancer"
- },
- {
-   "id": 9,
-   "daoName": "PROTOCOL GUILD",
-   "airdropAmount": "3,000,000.00",
-   "token": null,
-   "cg-id": ""
- },
- {
-   "id": 10,
-   "daoName": "CAP",
-   "airdropAmount": "2,961,715.00",
-   "token": "CAP",
-   "cg-id": "cap"
- },
- {
-   "id": 11,
-   "daoName": "VESTA FINANCE",
-   "airdropAmount": "2,704,175.00",
-   "token": "VSTA",
-   "cg-id": "vesta-finance"
- },
- {
-   "id": 12,
-   "daoName": "PLUTUSDAO",
-   "airdropAmount": "2,704,175.00",
-   "token": "PLS",
-   "cg-id": "plutusdao"
- },
- {
-   "id": 13,
-   "daoName": "AAVE",
-   "airdropAmount": "2,704,175.00",
-   "token": "AAVE",
-   "cg-id": "aave"
- },
- {
-   "id": 14,
-   "daoName": "1INCH",
-   "airdropAmount": "2,575,405.00",
-   "token": "1INCH",
-   "cg-id": "1inch"
- },
- {
-   "id": 15,
-   "daoName": "DFORCE",
-   "airdropAmount": "2,446,634.00",
-   "token": "",
-   "cg-id": "dforce-token"
- },
- {
-   "id": 16,
-   "daoName": "JONES DAO",
-   "airdropAmount": "2,317,864.00",
-   "token": "JONES",
-   "cg-id": "jones-dao"
- },
- {
-   "id": 17,
-   "daoName": "GALXE",
-   "airdropAmount": "2,317,864.00",
-   "token": "",
-   "cg-id": "project-galaxy"
- },
- {
-   "id": 18,
-   "daoName": "CAMELOT",
-   "airdropAmount": "2,189,094.00",
-   "token": "GRAIL",
-   "cg-id": "camelot-token"
- },
- {
-   "id": 19,
-   "daoName": "DODO",
-   "airdropAmount": "2,189,094.00",
-   "token": "DODO",
-   "cg-id": "dodo"
- },
- {
-   "id": 20,
-   "daoName": "GAINS NETWORK",
-   "airdropAmount": "1,931,553.00",
-   "token": "GNS",
-   "cg-id": "gains-network"
- },
- {
-   "id": 21,
-   "daoName": "MUX PROTOCOL",
-   "airdropAmount": "1,931,553.00",
-   "token": "MUX",
-   "cg-id": "mcdex"
- },
- {
-   "id": 22,
-   "daoName": "SPERAX",
-   "airdropAmount": "1,802,783.00",
-   "token": "SPA",
-   "cg-id": "sperax"
- },
- {
-   "id": 23,
-   "daoName": "BEEFY FINANCE",
-   "airdropAmount": "1,802,783.00",
-   "token": "BIFI",
-   "cg-id": "beefy-finance"
- },
- {
-   "id": 24,
-   "daoName": "PREMIA",
-   "airdropAmount": "1,802,783.00",
-   "token": "PREMIA",
-   "cg-id": "premia"
- },
- {
-   "id": 25,
-   "daoName": "HOP PROTOCOL",
-   "airdropAmount": "1,674,013.00",
-   "token": "HOP",
-   "cg-id": "hop-protocol"
- },
- {
-   "id": 26,
-   "daoName": "STARGATE",
-   "airdropAmount": "1,674,013.00",
-   "token": "STG",
-   "cg-id": "stargate-finance"
- },
- {
-   "id": 27,
-   "daoName": "SADDLE FINANCE",
-   "airdropAmount": "1,545,243.00",
-   "token": "SDL",
-   "cg-id": "saddle-finance"
- },
- {
-   "id": 28,
-   "daoName": "MAKERDAO",
-   "airdropAmount": "1,545,243.00",
-   "token": "MKR",
-   "cg-id": "maker"
- },
- {
-   "id": 29,
-   "daoName": "Y2K FINANCE",
-   "airdropAmount": "1,416,473.00",
-   "token": "Y2K",
-   "cg-id": "y2k"
- },
- {
-   "id": 30,
-   "daoName": "BATTLEFLY",
-   "airdropAmount": "1,287,702.00",
-   "token": "",
-   "cg-id": "battlefly"
- },
- {
-   "id": 31,
-   "daoName": "MYCELIUM",
-   "airdropAmount": "1,158,932.00",
-   "token": "",
-   "cg-id": "mycelium"
- },
- {
-   "id": 32,
-   "daoName": "KYBERSWAP",
-   "airdropAmount": "1,158,932.00",
-   "token": "",
-   "cg-id": "kyber-network-crystal"
- },
- {
-   "id": 33,
-   "daoName": "SYNAPSE PROTOCOL",
-   "airdropAmount": "1,030,162.00",
-   "token": "",
-   "cg-id": "synapse-2"
- },
- {
-   "id": 34,
-   "daoName": "UMAMI FINANCE",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "umami-finance"
- },
- {
-   "id": 35,
-   "daoName": "ABRACADABRA",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "spell-token"
- },
- {
-   "id": 36,
-   "daoName": "CELER",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "celer-network"
- },
- {
-   "id": 37,
-   "daoName": "MULTICHAIN",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "multichain"
- },
- {
-   "id": 38,
-   "daoName": "TRADERJOE",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "joe"
- },
- {
-   "id": 39,
-   "daoName": "CONVEX",
-   "airdropAmount": "901,392.00",
-   "token": "",
-   "cg-id": "convex-finance"
- },
- {
-   "id": 40,
-   "daoName": "LIDO",
-   "airdropAmount": "772,621.00",
-   "token": "",
-   "cg-id": "lido-dao"
- },
- {
-   "id": 41,
-   "daoName": "ACROSS PROTOCOL",
-   "airdropAmount": "772,621.00",
-   "token": "",
-   "cg-id": "across-protocol"
- },
- {
-   "id": 42,
-   "daoName": "WOOFI",
-   "airdropAmount": "772,621.00",
-   "token": "",
-   "cg-id": ""
- },
- {
-   "id": 43,
-   "daoName": "0X",
-   "airdropAmount": "643,851.00",
-   "token": "",
-   "cg-id": "0x"
- },
- {
-   "id": 44,
-   "daoName": "APEX",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "multiple reee"
- },
- {
-   "id": 45,
-   "daoName": "IMPERMAX FINANCE",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "impermax-2"
- },
- {
-   "id": 46,
-   "daoName": "3XCALIBUR",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "3xcalibur"
- },
- {
-   "id": 47,
-   "daoName": "HEGIC",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "hegic"
- },
- {
-   "id": 48,
-   "daoName": "FRAX",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "frax"
- },
- {
-   "id": 49,
-   "daoName": "SWAPR",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "swapr"
- },
- {
-   "id": 50,
-   "daoName": "BICONOMY",
-   "airdropAmount": "515,081.00",
-   "token": "",
-   "cg-id": "biconomy"
- },
- {
-   "id": 51,
-   "daoName": "HUNDRED FINANCE",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "hundred-finance"
- },
- {
-   "id": 52,
-   "daoName": "O3 SWAP",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "o3-swap"
- },
- {
-   "id": 53,
-   "daoName": "DERI PROTOCOL",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "deri-protocol"
- },
- {
-   "id": 54,
-   "daoName": "FUTURESWAP",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "futureswap"
- },
- {
-   "id": 55,
-   "daoName": "QIDAO",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "qi-dao"
- },
- {
-   "id": 56,
-   "daoName": "GMD PROTOCOL",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "gmd-protocol"
- },
- {
-   "id": 57,
-   "daoName": "DAMNED PIRATES SOCIETY",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": ""
- },
- {
-   "id": 58,
-   "daoName": "HASHFLOW",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "hashflow"
- },
- {
-   "id": 59,
-   "daoName": "LYRA",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "lyra-finance"
- },
- {
-   "id": 60,
-   "daoName": "HANDLE.FI",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "handle-fi"
- },
- {
-   "id": 61,
-   "daoName": "GRAPH",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "the-graph"
- },
- {
-   "id": 62,
-   "daoName": "LIVEPEER",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "livepeer"
- },
- {
-   "id": 63,
-   "daoName": "CHAINLINK",
-   "airdropAmount": "386,311.00",
-   "token": "",
-   "cg-id": "chainlink"
- },
- {
-   "id": 64,
-   "daoName": "GELATO",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "gelato"
- },
- {
-   "id": 65,
-   "daoName": "OPENOCEAN",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "openocean"
- },
- {
-   "id": 66,
-   "daoName": "MASK",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "mask-network"
- },
- {
-   "id": 67,
-   "daoName": "BUFFER FINANCE",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "buffer-token"
- },
- {
-   "id": 68,
-   "daoName": "PARASWAP",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "paraswap"
- },
- {
-   "id": 69,
-   "daoName": "BARN BRIDGE",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "barnbridge"
- },
- {
-   "id": 70,
-   "daoName": "TRIDENT",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "tridentdao"
- },
- {
-   "id": 71,
-   "daoName": "THALES",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "thales"
- },
- {
-   "id": 72,
-   "daoName": "COVALENT",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "covalent"
- },
- {
-   "id": 73,
-   "daoName": "MARLIN PROTOCOL",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": "marlin"
- },
- {
-   "id": 74,
-   "daoName": "SAFE",
-   "airdropAmount": "257,540.00",
-   "token": "",
-   "cg-id": ""
- },
- {
-   "id": 75,
-   "daoName": "HONORWORLD",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "honor-world-token"
- },
- {
-   "id": 76,
-   "daoName": "BADGER FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "badger-dao"
- },
- {
-   "id": 77,
-   "daoName": "B.PROTOCOL",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "b-protocol"
- },
- {
-   "id": 78,
-   "daoName": "OLYMPUSDAO",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "olympus"
- },
- {
-   "id": 79,
-   "daoName": "ELK FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "elk-finance"
- },
- {
-   "id": 80,
-   "daoName": "LAYER2DAO",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "layer2dao"
- },
- {
-   "id": 81,
-   "daoName": "TALES OF ELLERIA",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "ellerium"
- },
- {
-   "id": 82,
-   "daoName": "XTOKEN",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "xtoken"
- },
- {
-   "id": 83,
-   "daoName": "DAOHAUS",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "daohaus"
- },
- {
-   "id": 84,
-   "daoName": "DFYN",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "dfyn-network"
- },
- {
-   "id": 85,
-   "daoName": "DIA",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "dia-data"
- },
- {
-   "id": 86,
-   "daoName": "INSTADAPP",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "instadapp"
- },
- {
-   "id": 87,
-   "daoName": "KROMATIKA",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "kromatika"
- },
- {
-   "id": 88,
-   "daoName": "PNETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "",
-   "cg-id": "pnetwork"
- },
- {
-   "id": 89,
-   "daoName": "IZUMI FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "IZI",
-   "cg-id": "izumi-bond-usd"
- },
- {
-   "id": 90,
-   "daoName": "OPENBLOX",
-   "airdropAmount": "75,000.00",
-   "token": "OBX",
-   "cg-id": "openblox"
- },
- {
-   "id": 91,
-   "daoName": "RHINO.FI",
-   "airdropAmount": "75,000.00",
-   "token": "DVF",
-   "cg-id": "rhinofi"
- },
- {
-   "id": 92,
-   "daoName": "RSS3",
-   "airdropAmount": "75,000.00",
-   "token": "RSS3",
-   "cg-id": "rss3"
- },
- {
-   "id": 93,
-   "daoName": "RUBIC",
-   "airdropAmount": "75,000.00",
-   "token": "RBC",
-   "cg-id": "rubic"
- },
- {
-   "id": 94,
-   "daoName": "UMBRELLA NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "UMB",
-   "cg-id": "umbrella-network"
- },
- {
-   "id": 95,
-   "daoName": "YEARN",
-   "airdropAmount": "75,000.00",
-   "token": "YFI",
-   "cg-id": "yearn-finance"
- },
- {
-   "id": 96,
-   "daoName": "MUSE DAO",
-   "airdropAmount": "75,000.00",
-   "token": "MUSE",
-   "cg-id": "muse-2"
- },
- {
-   "id": 97,
-   "daoName": "API3 QRNG",
-   "airdropAmount": "75,000.00",
-   "token": "API3",
-   "cg-id": "api3"
- },
- {
-   "id": 98,
-   "daoName": "BRIDGE NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "BRDG",
-   "cg-id": "bridge-network"
- },
- {
-   "id": 99,
-   "daoName": "OPIUM NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "OPIUM",
-   "cg-id": "opium"
- },
- {
-   "id": 100,
-   "daoName": "RICEDEFI WALLET",
-   "airdropAmount": "75,000.00",
-   "token": "RICE",
-   "cg-id": ""
- },
- {
-   "id": 101,
-   "daoName": "ROUTER PROTOCOL",
-   "airdropAmount": "75,000.00",
-   "token": "ROUTE",
-   "cg-id": "route"
- },
- {
-   "id": 102,
-   "daoName": "TOKENLON",
-   "airdropAmount": "75,000.00",
-   "token": "LON",
-   "cg-id": "tokenlon"
- },
- {
-   "id": 103,
-   "daoName": "XDEFI WALLET",
-   "airdropAmount": "75,000.00",
-   "token": "XDEFI",
-   "cg-id": "xdefi"
- },
- {
-   "id": 104,
-   "daoName": "YIN FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "YIN",
-   "cg-id": "yin-finance"
- },
- {
-   "id": 105,
-   "daoName": "INSUREDAO",
-   "airdropAmount": "75,000.00",
-   "token": "INSURE",
-   "cg-id": "insuredao"
- },
- {
-   "id": 106,
-   "daoName": "ANGLE PROTOCOL",
-   "airdropAmount": "75,000.00",
-   "token": "ANGLE",
-   "cg-id": "angle-protocol"
- },
- {
-   "id": 107,
-   "daoName": "APOLLOX",
-   "airdropAmount": "75,000.00",
-   "token": "APX",
-   "cg-id": "apollox-2"
- },
- {
-   "id": 108,
-   "daoName": "CREDA",
-   "airdropAmount": "75,000.00",
-   "token": "CREDA",
-   "cg-id": "creda"
- },
- {
-   "id": 109,
-   "daoName": "RELAY CHAIN",
-   "airdropAmount": "75,000.00",
-   "token": "RELAY",
-   "cg-id": "relay-token"
- },
- {
-   "id": 110,
-   "daoName": "SPHERIUM FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "SPHRI",
-   "cg-id": "spherium"
- },
- {
-   "id": 111,
-   "daoName": "TRUST WALLET",
-   "airdropAmount": "75,000.00",
-   "token": "TWT",
-   "cg-id": "trust-wallet-token"
- },
- {
-   "id": 112,
-   "daoName": "UNLOCK",
-   "airdropAmount": "75,000.00",
-   "token": "UDT",
-   "cg-id": "unlock-protocol"
- },
- {
-   "id": 113,
-   "daoName": "ZIGZAG EXCHANGE",
-   "airdropAmount": "75,000.00",
-   "token": "ZZ",
-   "cg-id": "zigzag-2"
- },
- {
-   "id": 114,
-   "daoName": "AELIN",
-   "airdropAmount": "75,000.00",
-   "token": "AELIN",
-   "cg-id": "aelin"
- },
- {
-   "id": 115,
-   "daoName": "AXELAR NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "AXL",
-   "cg-id": "axelar"
- },
- {
-   "id": 116,
-   "daoName": "CASK PROTOCOL",
-   "airdropAmount": "75,000.00",
-   "token": "MASH",
-   "cg-id": "not-found"
- },
- {
-   "id": 117,
-   "daoName": "CRUST NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "CRU",
-   "cg-id": "crust-network"
- },
- {
-   "id": 118,
-   "daoName": "FURUCOMBO",
-   "airdropAmount": "75,000.00",
-   "token": "COMBO",
-   "cg-id": "FURUCOMBO"
- },
- {
-   "id": 119,
-   "daoName": "STAKEDAO",
-   "airdropAmount": "75,000.00",
-   "token": "SDT",
-   "cg-id": "stake-dao"
- },
- {
-   "id": 120,
-   "daoName": "STFX",
-   "airdropAmount": "75,000.00",
-   "token": "STFX",
-   "cg-id": "stfx"
- },
- {
-   "id": 121,
-   "daoName": "UNMARSHAL",
-   "airdropAmount": "75,000.00",
-   "token": "MARSH",
-   "cg-id": "unmarshal"
- },
- {
-   "id": 122,
-   "daoName": "ZEROSWAP",
-   "airdropAmount": "75,000.00",
-   "token": "ZEE",
-   "cg-id": "zeroswap"
- },
- {
-   "id": 123,
-   "daoName": "GAMMA",
-   "airdropAmount": "75,000.00",
-   "token": "GAMMA",
-   "cg-id": "gamma-strategies"
- },
- {
-   "id": 124,
-   "daoName": "POCKET NETWORK",
-   "airdropAmount": "75,000.00",
-   "token": "POKT",
-   "cg-id": "pocket-network"
- },
- {
-   "id": 125,
-   "daoName": "UNION FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "UNN",
-   "cg-id": "union-protocol-governance-token"
- },
- {
-   "id": 126,
-   "daoName": "HARVEST.FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "FARM",
-   "cg-id": "harvest-finance"
- },
- {
-   "id": 127,
-   "daoName": "RAIDEN",
-   "airdropAmount": "75,000.00",
-   "token": "RDN",
-   "cg-id": "raiden-network"
- },
- {
-   "id": 128,
-   "daoName": "VELA",
-   "airdropAmount": "75,000.00",
-   "token": "VELA",
-   "cg-id": "vela-token"
- },
- {
-   "id": 129,
-   "daoName": "ANKR",
-   "airdropAmount": "75,000.00",
-   "token": "ANKR",
-   "cg-id": "ankr"
- },
- {
-   "id": 130,
-   "daoName": "ZYBERSWAP",
-   "airdropAmount": "75,000.00",
-   "token": "ZYB",
-   "cg-id": "zyberswap"
- },
- {
-   "id": 131,
-   "daoName": "WEPIGGY",
-   "airdropAmount": "75,000.00",
-   "token": "WPC",
-   "cg-id": "wepiggy-coin"
- },
- {
-   "id": 132,
-   "daoName": "LIQUITY",
-   "airdropAmount": "75,000.00",
-   "token": "LQTY",
-   "cg-id": "liquity"
- },
- {
-   "id": 133,
-   "daoName": "CVI",
-   "airdropAmount": "75,000.00",
-   "token": "GOVI",
-   "cg-id": "govi"
- },
- {
-   "id": 134,
-   "daoName": "UNIDEX",
-   "airdropAmount": "75,000.00",
-   "token": "UNIDX",
-   "cg-id": "unidx"
- },
- {
-   "id": 135,
-   "daoName": "XY FINANCE",
-   "airdropAmount": "75,000.00",
-   "token": "XY",
-   "cg-id": "xy-finance"
- },
- {
-   "id": 136,
-   "daoName": "OOKI",
-   "airdropAmount": "75,000.00",
-   "token": "OOKI",
-   "cg-id": "ooki"
- },
- {
-   "id": 137,
-   "daoName": "CRYPTEX",
-   "airdropAmount": "75,000.00",
-   "token": "CTX",
-   "cg-id": "cryptex-finance"
- }
+  {
+    "id": 1,
+    "daoName": "TREASURE",
+    "airdropAmount": "8000000",
+    "token": "MAGIC",
+    "cg-id": "magic"
+  },
+  {
+    "id": 2,
+    "daoName": "GMX",
+    "airdropAmount": "8000000",
+    "token": "GMX",
+    "cg-id": "gmx"
+  },
+  {
+    "id": 3,
+    "daoName": "UNISWAP",
+    "airdropAmount": "4378188",
+    "token": "UNI",
+    "cg-id": "uniswap"
+  },
+  {
+    "id": 4,
+    "daoName": "SUSHISWAP",
+    "airdropAmount": "4249418",
+    "token": "SUSHI",
+    "cg-id": "sushi"
+  },
+  {
+    "id": 5,
+    "daoName": "DOPEX",
+    "airdropAmount": "3863107",
+    "token": "DPX",
+    "cg-id": "dopex"
+  },
+  {
+    "id": 6,
+    "daoName": "CURVE",
+    "airdropAmount": "3476796",
+    "token": "CRV",
+    "cg-id": "curve-dao-token"
+  },
+  {
+    "id": 7,
+    "daoName": "RADIANT CAPITAL",
+    "airdropAmount": "3348026",
+    "token": "RDNT",
+    "cg-id": "radiant-capital"
+  },
+  {
+    "id": 8,
+    "daoName": "BALANCER",
+    "airdropAmount": "3090486",
+    "token": "BAL",
+    "cg-id": "balancer"
+  },
+  {
+    "id": 9,
+    "daoName": "PROTOCOL GUILD",
+    "airdropAmount": "3000000",
+    "token": null,
+    "cg-id": ""
+  },
+  {
+    "id": 10,
+    "daoName": "CAP",
+    "airdropAmount": "2961715",
+    "token": "CAP",
+    "cg-id": "cap"
+  },
+  {
+    "id": 11,
+    "daoName": "VESTA FINANCE",
+    "airdropAmount": "2704175",
+    "token": "VSTA",
+    "cg-id": "vesta-finance"
+  },
+  {
+    "id": 12,
+    "daoName": "PLUTUSDAO",
+    "airdropAmount": "2704175",
+    "token": "PLS",
+    "cg-id": "plutusdao"
+  },
+  {
+    "id": 13,
+    "daoName": "AAVE",
+    "airdropAmount": "2704175",
+    "token": "AAVE",
+    "cg-id": "aave"
+  },
+  {
+    "id": 14,
+    "daoName": "1INCH",
+    "airdropAmount": "2575405",
+    "token": "1INCH",
+    "cg-id": "1inch"
+  },
+  {
+    "id": 15,
+    "daoName": "DFORCE",
+    "airdropAmount": "2446634",
+    "token": "",
+    "cg-id": "dforce-token"
+  },
+  {
+    "id": 16,
+    "daoName": "JONES DAO",
+    "airdropAmount": "2317864",
+    "token": "JONES",
+    "cg-id": "jones-dao"
+  },
+  {
+    "id": 17,
+    "daoName": "GALXE",
+    "airdropAmount": "2317864",
+    "token": "",
+    "cg-id": "project-galaxy"
+  },
+  {
+    "id": 18,
+    "daoName": "CAMELOT",
+    "airdropAmount": "2189094",
+    "token": "GRAIL",
+    "cg-id": "camelot-token"
+  },
+  {
+    "id": 19,
+    "daoName": "DODO",
+    "airdropAmount": "2189094",
+    "token": "DODO",
+    "cg-id": "dodo"
+  },
+  {
+    "id": 20,
+    "daoName": "GAINS NETWORK",
+    "airdropAmount": "1931553",
+    "token": "GNS",
+    "cg-id": "gains-network"
+  },
+  {
+    "id": 21,
+    "daoName": "MUX PROTOCOL",
+    "airdropAmount": "1931553",
+    "token": "MUX",
+    "cg-id": "mcdex"
+  },
+  {
+    "id": 22,
+    "daoName": "SPERAX",
+    "airdropAmount": "1802783",
+    "token": "SPA",
+    "cg-id": "sperax"
+  },
+  {
+    "id": 23,
+    "daoName": "BEEFY FINANCE",
+    "airdropAmount": "1802783",
+    "token": "BIFI",
+    "cg-id": "beefy-finance"
+  },
+  {
+    "id": 24,
+    "daoName": "PREMIA",
+    "airdropAmount": "1802783",
+    "token": "PREMIA",
+    "cg-id": "premia"
+  },
+  {
+    "id": 25,
+    "daoName": "HOP PROTOCOL",
+    "airdropAmount": "1674013",
+    "token": "HOP",
+    "cg-id": "hop-protocol"
+  },
+  {
+    "id": 26,
+    "daoName": "STARGATE",
+    "airdropAmount": "1674013",
+    "token": "STG",
+    "cg-id": "stargate-finance"
+  },
+  {
+    "id": 27,
+    "daoName": "SADDLE FINANCE",
+    "airdropAmount": "1545243",
+    "token": "SDL",
+    "cg-id": "saddle-finance"
+  },
+  {
+    "id": 28,
+    "daoName": "MAKERDAO",
+    "airdropAmount": "1545243",
+    "token": "MKR",
+    "cg-id": "maker"
+  },
+  {
+    "id": 29,
+    "daoName": "Y2K FINANCE",
+    "airdropAmount": "1416473",
+    "token": "Y2K",
+    "cg-id": "y2k"
+  },
+  {
+    "id": 30,
+    "daoName": "BATTLEFLY",
+    "airdropAmount": "1287702",
+    "token": "",
+    "cg-id": "battlefly"
+  },
+  {
+    "id": 31,
+    "daoName": "MYCELIUM",
+    "airdropAmount": "1158932",
+    "token": "",
+    "cg-id": "mycelium"
+  },
+  {
+    "id": 32,
+    "daoName": "KYBERSWAP",
+    "airdropAmount": "1158932",
+    "token": "",
+    "cg-id": "kyber-network-crystal"
+  },
+  {
+    "id": 33,
+    "daoName": "SYNAPSE PROTOCOL",
+    "airdropAmount": "1030162",
+    "token": "",
+    "cg-id": "synapse-2"
+  },
+  {
+    "id": 34,
+    "daoName": "UMAMI FINANCE",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "umami-finance"
+  },
+  {
+    "id": 35,
+    "daoName": "ABRACADABRA",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "spell-token"
+  },
+  {
+    "id": 36,
+    "daoName": "CELER",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "celer-network"
+  },
+  {
+    "id": 37,
+    "daoName": "MULTICHAIN",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "multichain"
+  },
+  {
+    "id": 38,
+    "daoName": "TRADERJOE",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "joe"
+  },
+  {
+    "id": 39,
+    "daoName": "CONVEX",
+    "airdropAmount": "901392",
+    "token": "",
+    "cg-id": "convex-finance"
+  },
+  {
+    "id": 40,
+    "daoName": "LIDO",
+    "airdropAmount": "772621",
+    "token": "",
+    "cg-id": "lido-dao"
+  },
+  {
+    "id": 41,
+    "daoName": "ACROSS PROTOCOL",
+    "airdropAmount": "772621",
+    "token": "",
+    "cg-id": "across-protocol"
+  },
+  {
+    "id": 42,
+    "daoName": "WOOFI",
+    "airdropAmount": "772621",
+    "token": "",
+    "cg-id": ""
+  },
+  {
+    "id": 43,
+    "daoName": "0X",
+    "airdropAmount": "643851",
+    "token": "",
+    "cg-id": "0x"
+  },
+  {
+    "id": 44,
+    "daoName": "APEX",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "multiple reee"
+  },
+  {
+    "id": 45,
+    "daoName": "IMPERMAX FINANCE",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "impermax-2"
+  },
+  {
+    "id": 46,
+    "daoName": "3XCALIBUR",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "3xcalibur"
+  },
+  {
+    "id": 47,
+    "daoName": "HEGIC",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "hegic"
+  },
+  {
+    "id": 48,
+    "daoName": "FRAX",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "frax"
+  },
+  {
+    "id": 49,
+    "daoName": "SWAPR",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "swapr"
+  },
+  {
+    "id": 50,
+    "daoName": "BICONOMY",
+    "airdropAmount": "515081",
+    "token": "",
+    "cg-id": "biconomy"
+  },
+  {
+    "id": 51,
+    "daoName": "HUNDRED FINANCE",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "hundred-finance"
+  },
+  {
+    "id": 52,
+    "daoName": "O3 SWAP",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "o3-swap"
+  },
+  {
+    "id": 53,
+    "daoName": "DERI PROTOCOL",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "deri-protocol"
+  },
+  {
+    "id": 54,
+    "daoName": "FUTURESWAP",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "futureswap"
+  },
+  {
+    "id": 55,
+    "daoName": "QIDAO",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "qi-dao"
+  },
+  {
+    "id": 56,
+    "daoName": "GMD PROTOCOL",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "gmd-protocol"
+  },
+  {
+    "id": 57,
+    "daoName": "DAMNED PIRATES SOCIETY",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": ""
+  },
+  {
+    "id": 58,
+    "daoName": "HASHFLOW",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "hashflow"
+  },
+  {
+    "id": 59,
+    "daoName": "LYRA",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "lyra-finance"
+  },
+  {
+    "id": 60,
+    "daoName": "HANDLE.FI",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "handle-fi"
+  },
+  {
+    "id": 61,
+    "daoName": "GRAPH",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "the-graph"
+  },
+  {
+    "id": 62,
+    "daoName": "LIVEPEER",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "livepeer"
+  },
+  {
+    "id": 63,
+    "daoName": "CHAINLINK",
+    "airdropAmount": "386311",
+    "token": "",
+    "cg-id": "chainlink"
+  },
+  {
+    "id": 64,
+    "daoName": "GELATO",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "gelato"
+  },
+  {
+    "id": 65,
+    "daoName": "OPENOCEAN",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "openocean"
+  },
+  {
+    "id": 66,
+    "daoName": "MASK",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "mask-network"
+  },
+  {
+    "id": 67,
+    "daoName": "BUFFER FINANCE",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "buffer-token"
+  },
+  {
+    "id": 68,
+    "daoName": "PARASWAP",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "paraswap"
+  },
+  {
+    "id": 69,
+    "daoName": "BARN BRIDGE",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "barnbridge"
+  },
+  {
+    "id": 70,
+    "daoName": "TRIDENT",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "tridentdao"
+  },
+  {
+    "id": 71,
+    "daoName": "THALES",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "thales"
+  },
+  {
+    "id": 72,
+    "daoName": "COVALENT",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "covalent"
+  },
+  {
+    "id": 73,
+    "daoName": "MARLIN PROTOCOL",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": "marlin"
+  },
+  {
+    "id": 74,
+    "daoName": "SAFE",
+    "airdropAmount": "257540",
+    "token": "",
+    "cg-id": ""
+  },
+  {
+    "id": 75,
+    "daoName": "HONORWORLD",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "honor-world-token"
+  },
+  {
+    "id": 76,
+    "daoName": "BADGER FINANCE",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "badger-dao"
+  },
+  {
+    "id": 77,
+    "daoName": "B.PROTOCOL",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "b-protocol"
+  },
+  {
+    "id": 78,
+    "daoName": "OLYMPUSDAO",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "olympus"
+  },
+  {
+    "id": 79,
+    "daoName": "ELK FINANCE",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "elk-finance"
+  },
+  {
+    "id": 80,
+    "daoName": "LAYER2DAO",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "layer2dao"
+  },
+  {
+    "id": 81,
+    "daoName": "TALES OF ELLERIA",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "ellerium"
+  },
+  {
+    "id": 82,
+    "daoName": "XTOKEN",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "xtoken"
+  },
+  {
+    "id": 83,
+    "daoName": "DAOHAUS",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "daohaus"
+  },
+  {
+    "id": 84,
+    "daoName": "DFYN",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "dfyn-network"
+  },
+  {
+    "id": 85,
+    "daoName": "DIA",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "dia-data"
+  },
+  {
+    "id": 86,
+    "daoName": "INSTADAPP",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "instadapp"
+  },
+  {
+    "id": 87,
+    "daoName": "KROMATIKA",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "kromatika"
+  },
+  {
+    "id": 88,
+    "daoName": "PNETWORK",
+    "airdropAmount": "75000",
+    "token": "",
+    "cg-id": "pnetwork"
+  },
+  {
+    "id": 89,
+    "daoName": "IZUMI FINANCE",
+    "airdropAmount": "75000",
+    "token": "IZI",
+    "cg-id": "izumi-bond-usd"
+  },
+  {
+    "id": 90,
+    "daoName": "OPENBLOX",
+    "airdropAmount": "75000",
+    "token": "OBX",
+    "cg-id": "openblox"
+  },
+  {
+    "id": 91,
+    "daoName": "RHINO.FI",
+    "airdropAmount": "75000",
+    "token": "DVF",
+    "cg-id": "rhinofi"
+  },
+  {
+    "id": 92,
+    "daoName": "RSS3",
+    "airdropAmount": "75000",
+    "token": "RSS3",
+    "cg-id": "rss3"
+  },
+  {
+    "id": 93,
+    "daoName": "RUBIC",
+    "airdropAmount": "75000",
+    "token": "RBC",
+    "cg-id": "rubic"
+  },
+  {
+    "id": 94,
+    "daoName": "UMBRELLA NETWORK",
+    "airdropAmount": "75000",
+    "token": "UMB",
+    "cg-id": "umbrella-network"
+  },
+  {
+    "id": 95,
+    "daoName": "YEARN",
+    "airdropAmount": "75000",
+    "token": "YFI",
+    "cg-id": "yearn-finance"
+  },
+  {
+    "id": 96,
+    "daoName": "MUSE DAO",
+    "airdropAmount": "75000",
+    "token": "MUSE",
+    "cg-id": "muse-2"
+  },
+  {
+    "id": 97,
+    "daoName": "API3 QRNG",
+    "airdropAmount": "75000",
+    "token": "API3",
+    "cg-id": "api3"
+  },
+  {
+    "id": 98,
+    "daoName": "BRIDGE NETWORK",
+    "airdropAmount": "75000",
+    "token": "BRDG",
+    "cg-id": "bridge-network"
+  },
+  {
+    "id": 99,
+    "daoName": "OPIUM NETWORK",
+    "airdropAmount": "75000",
+    "token": "OPIUM",
+    "cg-id": "opium"
+  },
+  {
+    "id": 100,
+    "daoName": "RICEDEFI WALLET",
+    "airdropAmount": "75000",
+    "token": "RICE",
+    "cg-id": ""
+  },
+  {
+    "id": 101,
+    "daoName": "ROUTER PROTOCOL",
+    "airdropAmount": "75000",
+    "token": "ROUTE",
+    "cg-id": "route"
+  },
+  {
+    "id": 102,
+    "daoName": "TOKENLON",
+    "airdropAmount": "75000",
+    "token": "LON",
+    "cg-id": "tokenlon"
+  },
+  {
+    "id": 103,
+    "daoName": "XDEFI WALLET",
+    "airdropAmount": "75000",
+    "token": "XDEFI",
+    "cg-id": "xdefi"
+  },
+  {
+    "id": 104,
+    "daoName": "YIN FINANCE",
+    "airdropAmount": "75000",
+    "token": "YIN",
+    "cg-id": "yin-finance"
+  },
+  {
+    "id": 105,
+    "daoName": "INSUREDAO",
+    "airdropAmount": "75000",
+    "token": "INSURE",
+    "cg-id": "insuredao"
+  },
+  {
+    "id": 106,
+    "daoName": "ANGLE PROTOCOL",
+    "airdropAmount": "75000",
+    "token": "ANGLE",
+    "cg-id": "angle-protocol"
+  },
+  {
+    "id": 107,
+    "daoName": "APOLLOX",
+    "airdropAmount": "75000",
+    "token": "APX",
+    "cg-id": "apollox-2"
+  },
+  {
+    "id": 108,
+    "daoName": "CREDA",
+    "airdropAmount": "75000",
+    "token": "CREDA",
+    "cg-id": "creda"
+  },
+  {
+    "id": 109,
+    "daoName": "RELAY CHAIN",
+    "airdropAmount": "75000",
+    "token": "RELAY",
+    "cg-id": "relay-token"
+  },
+  {
+    "id": 110,
+    "daoName": "SPHERIUM FINANCE",
+    "airdropAmount": "75000",
+    "token": "SPHRI",
+    "cg-id": "spherium"
+  },
+  {
+    "id": 111,
+    "daoName": "TRUST WALLET",
+    "airdropAmount": "75000",
+    "token": "TWT",
+    "cg-id": "trust-wallet-token"
+  },
+  {
+    "id": 112,
+    "daoName": "UNLOCK",
+    "airdropAmount": "75000",
+    "token": "UDT",
+    "cg-id": "unlock-protocol"
+  },
+  {
+    "id": 113,
+    "daoName": "ZIGZAG EXCHANGE",
+    "airdropAmount": "75000",
+    "token": "ZZ",
+    "cg-id": "zigzag-2"
+  },
+  {
+    "id": 114,
+    "daoName": "AELIN",
+    "airdropAmount": "75000",
+    "token": "AELIN",
+    "cg-id": "aelin"
+  },
+  {
+    "id": 115,
+    "daoName": "AXELAR NETWORK",
+    "airdropAmount": "75000",
+    "token": "AXL",
+    "cg-id": "axelar"
+  },
+  {
+    "id": 116,
+    "daoName": "CASK PROTOCOL",
+    "airdropAmount": "75000",
+    "token": "MASH",
+    "cg-id": "not-found"
+  },
+  {
+    "id": 117,
+    "daoName": "CRUST NETWORK",
+    "airdropAmount": "75000",
+    "token": "CRU",
+    "cg-id": "crust-network"
+  },
+  {
+    "id": 118,
+    "daoName": "FURUCOMBO",
+    "airdropAmount": "75000",
+    "token": "COMBO",
+    "cg-id": "FURUCOMBO"
+  },
+  {
+    "id": 119,
+    "daoName": "STAKEDAO",
+    "airdropAmount": "75000",
+    "token": "SDT",
+    "cg-id": "stake-dao"
+  },
+  {
+    "id": 120,
+    "daoName": "STFX",
+    "airdropAmount": "75000",
+    "token": "STFX",
+    "cg-id": "stfx"
+  },
+  {
+    "id": 121,
+    "daoName": "UNMARSHAL",
+    "airdropAmount": "75000",
+    "token": "MARSH",
+    "cg-id": "unmarshal"
+  },
+  {
+    "id": 122,
+    "daoName": "ZEROSWAP",
+    "airdropAmount": "75000",
+    "token": "ZEE",
+    "cg-id": "zeroswap"
+  },
+  {
+    "id": 123,
+    "daoName": "GAMMA",
+    "airdropAmount": "75000",
+    "token": "GAMMA",
+    "cg-id": "gamma-strategies"
+  },
+  {
+    "id": 124,
+    "daoName": "POCKET NETWORK",
+    "airdropAmount": "75000",
+    "token": "POKT",
+    "cg-id": "pocket-network"
+  },
+  {
+    "id": 125,
+    "daoName": "UNION FINANCE",
+    "airdropAmount": "75000",
+    "token": "UNN",
+    "cg-id": "union-protocol-governance-token"
+  },
+  {
+    "id": 126,
+    "daoName": "HARVEST.FINANCE",
+    "airdropAmount": "75000",
+    "token": "FARM",
+    "cg-id": "harvest-finance"
+  },
+  {
+    "id": 127,
+    "daoName": "RAIDEN",
+    "airdropAmount": "75000",
+    "token": "RDN",
+    "cg-id": "raiden-network"
+  },
+  {
+    "id": 128,
+    "daoName": "VELA",
+    "airdropAmount": "75000",
+    "token": "VELA",
+    "cg-id": "vela-token"
+  },
+  {
+    "id": 129,
+    "daoName": "ANKR",
+    "airdropAmount": "75000",
+    "token": "ANKR",
+    "cg-id": "ankr"
+  },
+  {
+    "id": 130,
+    "daoName": "ZYBERSWAP",
+    "airdropAmount": "75000",
+    "token": "ZYB",
+    "cg-id": "zyberswap"
+  },
+  {
+    "id": 131,
+    "daoName": "WEPIGGY",
+    "airdropAmount": "75000",
+    "token": "WPC",
+    "cg-id": "wepiggy-coin"
+  },
+  {
+    "id": 132,
+    "daoName": "LIQUITY",
+    "airdropAmount": "75000",
+    "token": "LQTY",
+    "cg-id": "liquity"
+  },
+  {
+    "id": 133,
+    "daoName": "CVI",
+    "airdropAmount": "75000",
+    "token": "GOVI",
+    "cg-id": "govi"
+  },
+  {
+    "id": 134,
+    "daoName": "UNIDEX",
+    "airdropAmount": "75000",
+    "token": "UNIDX",
+    "cg-id": "unidx"
+  },
+  {
+    "id": 135,
+    "daoName": "XY FINANCE",
+    "airdropAmount": "75000",
+    "token": "XY",
+    "cg-id": "xy-finance"
+  },
+  {
+    "id": 136,
+    "daoName": "OOKI",
+    "airdropAmount": "75000",
+    "token": "OOKI",
+    "cg-id": "ooki"
+  },
+  {
+    "id": 137,
+    "daoName": "CRYPTEX",
+    "airdropAmount": "75000",
+    "token": "CTX",
+    "cg-id": "cryptex-finance"
+  }
 ]

@@ -37,7 +37,7 @@ export default function Home() {
           <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{arbPrice}</dd>
         </div>
       </div>
-      <Table daos={airdropTotals} arbPrice={arbPrice} />
+      <Table daos={airdropTotals2} arbPrice={arbPrice} />
       {/* {airdropTotals.map(({ id, daoName, airdropAmount }) => {
         return (
           <div key={id}>

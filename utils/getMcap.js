@@ -1,6 +1,6 @@
 // use coingecko api to get market cap of a list of coins given coingecko ids
 
-const getMcaps = async (ids) => {
+export const getMcaps = async (ids) => {
   // get the market cap of a list of coins given coingecko ids
   const _ids = ids.join(",");
   const res = await fetch(`https://api.coingecko.com/api/v3/coins/markets?ids=${_ids}&vs_currency=usd`);
