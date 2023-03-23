@@ -23,6 +23,8 @@ export default function Home() {
   // airdrop-amount
   // percent-of-market-cap
   useEffect(() => {
+    const data = airdropData.filter((dao) => dao.mcap !== 0);
+    const exclData = airdropData.filter((dao) => dao.mcap === 0);
     switch (sortBy) {
       case "airdrop-amount-desc":
         setAirdropData(
@@ -46,48 +48,70 @@ export default function Home() {
         break;
       case "market-cap-desc":
         setAirdropData(
-          [...airdropData].sort((a, b) => b.mcap.market_cap - a.mcap.market_cap)
+          [...data]
+            .sort((a, b) => {
+              if (!a.mcap && b.mcap) return -1;
+              if (a.mcap && !b.mcap) return 1;
+              return b.mcap.market_cap - a.mcap.market_cap;
+            })
+            .concat(exclData)
         );
         break;
       case "market-cap-asc":
         setAirdropData(
-          [...airdropData].sort((a, b) => a.mcap.market_cap - b.mcap.market_cap)
+          [...data]
+            .sort((a, b) => {
+              if (a.mcap && !b.mcap) return -1;
+              if (!a.mcap && b.mcap) return 1;
+              return a.mcap.market_cap - b.mcap.market_cap;
+            })
+            .concat(exclData)
         );
         break;
       case "dao-name-desc":
         setAirdropData(
-          [...airdropData].sort((a, b) => b.daoName.localeCompare(a.daoName))
+          [...data]
+            .sort((a, b) => b.daoName.localeCompare(a.daoName))
+            .concat(exclData)
         );
         break;
       case "dao-name-asc":
         setAirdropData(
-          [...airdropData].sort((a, b) => a.daoName.localeCompare(b.daoName))
+          [...data]
+            .sort((a, b) => a.daoName.localeCompare(b.daoName))
+            .concat(exclData)
         );
         break;
       case "percent-of-market-cap-desc":
         setAirdropData(
-          [...airdropData].sort((a, b) => {
-            const arbPrice = activeTab === 0 ? actualArbPrice : customArbPrice;
-            const AairdropAmountDollars = a.airdropAmount * arbPrice;
-            const ApercentOfMcap =
-              (AairdropAmountDollars / a.mcap.market_cap) * 100;
-            const BairdropAmountDollars = b.airdropAmount * arbPrice;
-            const BpercentOfMcap =
-              (BairdropAmountDollars / b.mcap.market_cap) * 100;
-            return BpercentOfMcap - ApercentOfMcap;
-          })
+          [...data]
+            .sort((a, b) => {
+              const arbPrice =
+                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const AairdropAmountDollars = a.airdropAmount * arbPrice;
+              const ApercentOfMcap =
+                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+              const BairdropAmountDollars = b.airdropAmount * arbPrice;
+              const BpercentOfMcap =
+                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+              return BpercentOfMcap - ApercentOfMcap;
+            })
+            .concat(exclData)
         );
         break;
       case "percent-of-market-cap-asc":
         setAirdropData(
-          [...airdropData].sort((a, b) => {
-            const arbPrice = activeTab === 0 ? actualArbPrice : customArbPrice;
-            const AairdropAmountDollars = a.airdropAmount * arbPrice;
-            const ApercentOfMcap = (AairdropAmountDollars / a.mcap) * 100;
-            const BairdropAmountDollars = b.airdropAmount * arbPrice;
-            const BpercentOfMcap = (BairdropAmountDollars / b.mcap) * 100;
-            return ApercentOfMcap - BpercentOfMcap;
-          })
+          [...data]
+            .sort((a, b) => {
+              const arbPrice =
+                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const AairdropAmountDollars = a.airdropAmount * arbPrice;
+              const ApercentOfMcap = (AairdropAmountDollars / a.mcap) * 100;
+              const BairdropAmountDollars = b.airdropAmount * arbPrice;
+              const BpercentOfMcap = (BairdropAmountDollars / b.mcap) * 100;
+              return ApercentOfMcap - BpercentOfMcap;
+            })
+            .concat(exclData)
         );
         break;
     }

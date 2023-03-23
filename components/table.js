@@ -18,7 +18,6 @@ import Down from "./icons/down";
 
 const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
   const handleClick = (columnName) => {
-    console.log(sortBy);
     if (sortBy.includes(columnName)) {
       if (sortBy.includes("desc")) {
         setSortBy(columnName + "-asc");
@@ -28,7 +27,6 @@ const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
     } else {
       setSortBy(columnName + "-desc");
     }
-    console.log(columnName);
   };
 
   return (
