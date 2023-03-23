@@ -54,11 +54,11 @@ const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
               <table className="min-w-full divide-y divide-gray-300">
                 <thead className="bg-gray-50">
                   <tr>
-                    <TableHeading sortKeyName={"dao-name"} handleClick={handleClick} displayName="DAO Name" sortBy={sortBy} />
-                    <TableHeading sortKeyName={"market-cap"} handleClick={handleClick} displayName="DAO Token Market Cap" sortBy={sortBy} />
-                    <TableHeading sortKeyName={"airdrop-amount"} handleClick={handleClick} displayName="Airdrop Amount (tokens)" sortBy={sortBy} />
-                    <TableHeading sortKeyName={"airdrop-amount-dollars"} handleClick={handleClick} displayName="Airdrop Amount ($)" sortBy={sortBy} />
-                    <TableHeading sortKeyName={"percent-of-market-cap"} handleClick={handleClick} displayName="Airdrop % of market cap" sortBy={sortBy} />
+                    <TableHeading sortKeyName="dao-name" handleClick={handleClick} displayName="DAO Name" sortBy={sortBy} />
+                    <TableHeading sortKeyName="market-cap" handleClick={handleClick} displayName="DAO Token Market Cap" sortBy={sortBy} />
+                    <TableHeading sortKeyName="airdrop-amount" handleClick={handleClick} displayName="Airdrop Amount (tokens)" sortBy={sortBy} />
+                    <TableHeading sortKeyName="airdrop-amount-dollars" handleClick={handleClick} displayName="Airdrop Amount ($)" sortBy={sortBy} />
+                    <TableHeading sortKeyName="percent-of-market-cap" handleClick={handleClick} displayName="Airdrop % of market cap" sortBy={sortBy} />
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white">
