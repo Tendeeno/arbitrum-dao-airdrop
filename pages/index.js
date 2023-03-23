@@ -86,6 +86,8 @@ export default function Home() {
         setAirdropData(
           [...data]
             .sort((a, b) => {
+              if (!a.mcap && b.mcap) return -1;
+              if (a.mcap && !b.mcap) return 1;
               const arbPrice =
                 activeTab === 0 ? actualArbPrice : customArbPrice;
               const AairdropAmountDollars = a.airdropAmount * arbPrice;
@@ -103,12 +105,18 @@ export default function Home() {
         setAirdropData(
           [...data]
             .sort((a, b) => {
+              if (a.mcap && !b.mcap) return -1;
+              if (!a.mcap && b.mcap) return 1;
               const arbPrice =
                 activeTab === 0 ? actualArbPrice : customArbPrice;
               const AairdropAmountDollars = a.airdropAmount * arbPrice;
-              const ApercentOfMcap = (AairdropAmountDollars / a.mcap) * 100;
+              const ApercentOfMcap =
+                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+
               const BairdropAmountDollars = b.airdropAmount * arbPrice;
-              const BpercentOfMcap = (BairdropAmountDollars / b.mcap) * 100;
+              const BpercentOfMcap =
+                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+
               return ApercentOfMcap - BpercentOfMcap;
             })
             .concat(exclData)
