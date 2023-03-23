@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </div>
       <Table
-        daos={airdropTotals}
+        daos={airdropTotals2}
         arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
       />
     </div>
