@@ -17,7 +17,6 @@ import Up from "./icons/up";
 import Down from "./icons/down";
 
 const TableHeading = ({ sortKeyName, displayName, handleClick, sortBy }) => (
-  console.log({sortKeyName, displayName, handleClick, sortBy  }),
   <th
     onClick={() => handleClick(sortKeyName)}
     scope="col"
