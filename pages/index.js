@@ -58,6 +58,35 @@ export default function Home() {
 
   return (
     <div className="bg-gray-100 py-12">
+      <div className="fixed right-8 bottom-8 z-50">
+        <div className="flex justify-start items-center bg-white shadow-lg text-black rounded-full py-2 px-3 gap-1">
+          <div>Made by</div>
+          <a href="https://twitter.com/0xstrobe" target="_blank" rel="noopener">
+            <Image
+              src="/strobie.jpeg"
+              width="24"
+              height="24"
+              alt="logo"
+              className="rounded-full overflow-hidden"
+            />
+          </a>
+          {/* <div className="font-bold">Strobie</div> */}
+          {/* <div>and</div> */}
+          <a
+            href="https://twitter.com/tendeeno_"
+            target="_blank"
+            rel="noopener">
+            <Image
+              src="/tendeeno.jpeg"
+              width="24"
+              height="24"
+              alt="logo"
+              className="rounded-full overflow-hidden"
+            />
+          </a>
+          {/* <div className="font-bold">Tendeeno</div> */}
+        </div>
+      </div>
       <div className="container mx-auto">
         <div className="px-4 sm:px-6 lg:px-8 max-w-[320px] w-full ">
           <Tabs onChange={onChange} />
