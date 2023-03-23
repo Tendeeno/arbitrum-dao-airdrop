@@ -21,19 +21,13 @@ const Table = ({ daos, arbPrice }) => {
               <table className="min-w-full divide-y divide-gray-300">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th
-                      scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">
+                    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">
                       DAO Name
                     </th>
-                    <th
-                      scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                       Airdrop Amount (tokens)
                     </th>
-                    <th
-                      scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                       Airdrop Amount ($)
                     </th>
                   </tr>
@@ -46,9 +40,7 @@ const Table = ({ daos, arbPrice }) => {
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm ">
                           <div className="flex items-center">
                             <div className="">
-                              <div className="font-medium text-gray-900">
-                                {dao.daoName}
-                              </div>
+                              <div className="font-medium text-gray-900">{dao.daoName}</div>
                             </div>
                           </div>
                         </td>
