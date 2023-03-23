@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100 py-12">
       <div className="container mx-auto">
-        <div className="px-4 sm:px-6 lg:px-8 max-w-[25%] ">
+        <div className="px-4 sm:px-6 lg:px-8 max-w-[320px] w-full ">
           <Tabs onChange={onChange} />
           {activeTab === 0 ? (
             <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
@@ -92,10 +92,12 @@ export default function Home() {
           )}
         </div>
       </div>
-      <Table
-        daos={airdropTotals2}
-        arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
-      />
+      <div className="overflow-x-scroll overflow-y-visible">
+        <Table
+          daos={airdropTotals2}
+          arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
+        />
+      </div>
     </div>
   );
 }
