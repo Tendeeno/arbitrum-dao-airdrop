@@ -7,12 +7,127 @@ import Table from "../components/table";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Tabs from "../components/tabs";
+import { getMcaps } from "../utils/getMcap";
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
   const [actualArbPrice, setActualArbPrice] = useState(1.1);
   const [customArbPrice, setCustomArbPrice] = useState(1.1);
   const [displayPrice, setDisplayPrice] = useState(1.1);
+  const [airdropData, setAirdropData] = useState(airdropTotals2);
+  const [daoMcap, setDaoMcap] = useState({});
+  const [sortBy, setSortBy] = useState("airdrop-amount-desc");
+
+  // dao-name
+  // market-cap
+  // airdrop-amount
+  // percent-of-market-cap
+  useEffect(() => {
+    const data = airdropData.filter((dao) => dao.mcap !== 0);
+    const exclData = airdropData.filter((dao) => dao.mcap === 0);
+    switch (sortBy) {
+      case "airdrop-amount-desc":
+        setAirdropData(
+          [...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount)
+        );
+        break;
+      case "airdrop-amount-asc":
+        setAirdropData(
+          [...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount)
+        );
+        break;
+      case "airdrop-amount-dollars-desc":
+        setAirdropData(
+          [...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount)
+        );
+        break;
+      case "airdrop-amount-dollars-asc":
+        setAirdropData(
+          [...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount)
+        );
+        break;
+      case "market-cap-desc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => {
+              if (!a.mcap && b.mcap) return -1;
+              if (a.mcap && !b.mcap) return 1;
+              return b.mcap.market_cap - a.mcap.market_cap;
+            })
+            .concat(exclData)
+        );
+        break;
+      case "market-cap-asc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => {
+              if (a.mcap && !b.mcap) return -1;
+              if (!a.mcap && b.mcap) return 1;
+              return a.mcap.market_cap - b.mcap.market_cap;
+            })
+            .concat(exclData)
+        );
+        break;
+      case "dao-name-desc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => b.daoName.localeCompare(a.daoName))
+            .concat(exclData)
+        );
+        break;
+      case "dao-name-asc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => a.daoName.localeCompare(b.daoName))
+            .concat(exclData)
+        );
+        break;
+      case "percent-of-market-cap-desc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => {
+              if (!a.mcap && b.mcap) return -1;
+              if (a.mcap && !b.mcap) return 1;
+              const arbPrice =
+                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const AairdropAmountDollars = a.airdropAmount * arbPrice;
+              const ApercentOfMcap =
+                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+              const BairdropAmountDollars = b.airdropAmount * arbPrice;
+              const BpercentOfMcap =
+                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+              return BpercentOfMcap - ApercentOfMcap;
+            })
+            .concat(exclData)
+        );
+        break;
+      case "percent-of-market-cap-asc":
+        setAirdropData(
+          [...data]
+            .sort((a, b) => {
+              if (a.mcap && !b.mcap) return -1;
+              if (!a.mcap && b.mcap) return 1;
+              const arbPrice =
+                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const AairdropAmountDollars = a.airdropAmount * arbPrice;
+              const ApercentOfMcap =
+                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+
+              const BairdropAmountDollars = b.airdropAmount * arbPrice;
+              const BpercentOfMcap =
+                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+
+              return ApercentOfMcap - BpercentOfMcap;
+            })
+            .concat(exclData)
+        );
+        break;
+    }
+  }, [sortBy]);
+
+  const setSort = (sortType) => {
+    setSortBy(sortType);
+  };
 
   useEffect(() => {
     // fetch arb price every 7 seconds
@@ -22,6 +137,28 @@ export default function Home() {
       clearInterval(interval);
     };
   }, []);
+
+  useEffect(() => {
+    (async () => {
+      const ids =
+        airdropData
+          .map((dao) => dao["cg-id"])
+          .filter((id) => id !== "" && id !== "null") || [];
+      const mcaps = await getMcaps(ids);
+
+      const updatedDaos = airdropData.map((dao) => {
+        const mcap = mcaps[dao["cg-id"]] || 0;
+        return {
+          ...dao,
+          mcap,
+        };
+      });
+
+      setAirdropData(updatedDaos);
+    })();
+  }, []);
+
+  console.log(airdropData);
 
   useEffect(() => {
     // if we are on the "actual" tab, set the display price to the actual arb price
@@ -123,7 +260,9 @@ export default function Home() {
       </div>
       <div className="overflow-x-scroll overflow-y-visible">
         <Table
-          daos={airdropTotals2}
+          sortBy={sortBy}
+          setSortBy={setSortBy}
+          daos={airdropData}
           arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
         />
       </div>

@@ -13,19 +13,21 @@
 
 import { useEffect, useState } from "react";
 import { getMcaps } from "../utils/getMcap";
+import Up from "./icons/up";
+import Down from "./icons/down";
 
-const Table = ({ daos, arbPrice }) => {
-  const [daoMcap, setDaoMcap] = useState({});
-  useEffect(() => {
-    (async () => {
-      const ids =
-        daos
-          .map((dao) => dao["cg-id"])
-          .filter((id) => id !== "" && id !== "null") || [];
-      const mcaps = await getMcaps(ids);
-      setDaoMcap(mcaps);
-    })();
-  }, [daos]);
+const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
+  const handleClick = (columnName) => {
+    if (sortBy.includes(columnName)) {
+      if (sortBy.includes("desc")) {
+        setSortBy(columnName + "-asc");
+      } else {
+        setSortBy(columnName + "-desc");
+      }
+    } else {
+      setSortBy(columnName + "-desc");
+    }
+  };
 
   return (
     <div className="sm:px-6 lg:px-8 container sm:mx-auto px-12">
@@ -37,29 +39,60 @@ const Table = ({ daos, arbPrice }) => {
                 <thead className="bg-gray-50">
                   <tr>
                     <th
+                      onClick={() => handleClick("dao-name")}
                       scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">
-                      DAO Name
+                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        DAO Name
+                        {sortBy.includes("dao-name-asc") && <Up />}
+                        {sortBy.includes("dao-name-desc") && <Down />}
+                      </div>
                     </th>
                     <th
+                      onClick={() => handleClick("market-cap")}
                       scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 ">
-                      DAO Token Market Cap
+                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        DAO Token Market Cap
+                        {sortBy.includes("market-cap-asc") && <Up />}
+                        {sortBy.includes("market-cap-desc") && <Down />}
+                      </div>
                     </th>
                     <th
+                      onClick={() => handleClick("airdrop-amount")}
                       scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                      Airdrop Amount (tokens)
+                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        Airdrop Amount (tokens)
+                        {sortBy.includes("airdrop-amount-asc") && <Up />}
+                        {sortBy.includes("airdrop-amount-desc") && <Down />}
+                      </div>
                     </th>
                     <th
+                      onClick={() => handleClick("airdrop-amount-dollars")}
                       scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                      Airdrop Amount ($)
+                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        Airdrop Amount ($)
+                        {sortBy.includes("airdrop-amount-dollars-asc") && (
+                          <Up />
+                        )}
+                        {sortBy.includes("airdrop-amount-dollars-desc") && (
+                          <Down />
+                        )}
+                      </div>
                     </th>
                     <th
+                      onClick={() => handleClick("percent-of-market-cap")}
                       scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                      airdrop % of market cap
+                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
+                      <div className="flex items-center gap-1">
+                        airdrop % of market cap
+                        {sortBy.includes("percent-of-market-cap-asc") && <Up />}
+                        {sortBy.includes("percent-of-market-cap-desc") && (
+                          <Down />
+                        )}
+                      </div>
                     </th>
                   </tr>
                 </thead>
@@ -80,10 +113,7 @@ const Table = ({ daos, arbPrice }) => {
                         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm ">
                           <div className="flex items-center">
                             <div className="font-medium text-gray-900">
-                              $
-                              {Number(
-                                daoMcap[dao["cg-id"]]?.market_cap
-                              ).toLocaleString()}
+                              {dao.mcap && dao.mcap.market_cap.toLocaleString()}
                             </div>
                           </div>
                         </td>
@@ -104,11 +134,11 @@ const Table = ({ daos, arbPrice }) => {
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           <div className="font-medium text-gray-900">
-                            {(
-                              (airdropAmountDollars /
-                                Number(daoMcap[dao["cg-id"]]?.market_cap)) *
-                              100
-                            ).toLocaleString()}
+                            {dao.mcap &&
+                              (
+                                (airdropAmountDollars / dao.mcap.market_cap) *
+                                100
+                              ).toLocaleString()}
                             %
                           </div>
                         </td>
