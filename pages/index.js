@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import airdropTotals from "../airdropTotals.json";
+import airdropTotals2 from "../airdropTotals2.json";
 import Table from "../components/table";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -95,15 +96,6 @@ export default function Home() {
         daos={airdropTotals}
         arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
       />
-      {airdropTotals.map(({ id, daoName, airdropAmount }) => {
-        return (
-          <div key={id}>
-            <div>{id}</div>
-            <div>{daoName}</div>
-            <div>{airdropAmount}</div>
-          </div>
-        );
-      })}
     </div>
   );
 }
