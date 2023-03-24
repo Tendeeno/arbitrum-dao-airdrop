@@ -158,7 +158,7 @@ export default function Home() {
     })();
   }, []);
 
-  console.log(airdropData);
+  // console.log(airdropData);
 
   useEffect(() => {
     // if we are on the "actual" tab, set the display price to the actual arb price
@@ -207,8 +207,6 @@ export default function Home() {
               className="rounded-full overflow-hidden"
             />
           </a>
-          {/* <div className="font-bold">Strobie</div> */}
-          {/* <div>and</div> */}
           <a
             href="https://twitter.com/tendeeno_"
             target="_blank"
@@ -221,7 +219,6 @@ export default function Home() {
               className="rounded-full overflow-hidden"
             />
           </a>
-          {/* <div className="font-bold">Tendeeno</div> */}
         </div>
       </div>
       <div className="container mx-auto">

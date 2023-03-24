@@ -16,7 +16,22 @@ import { getMcaps } from "../utils/getMcap";
 import Up from "./icons/up";
 import Down from "./icons/down";
 
+const TableHeading = ({ sortKeyName, displayName, handleClick, sortBy }) => (
+  <th
+    onClick={() => handleClick(sortKeyName)}
+    scope="col"
+    className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 cursor-pointer"
+  >
+    <div className="flex items-center gap-1">
+      { displayName }
+      {sortBy === `${sortKeyName}-asc` && <Up />}
+      {sortBy === `${sortKeyName}-desc` && <Down />}
+    </div>
+  </th>
+)
+
 const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
+
   const handleClick = (columnName) => {
     if (sortBy.includes(columnName)) {
       if (sortBy.includes("desc")) {
@@ -38,62 +53,11 @@ const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
               <table className="min-w-full divide-y divide-gray-300">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th
-                      onClick={() => handleClick("dao-name")}
-                      scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        DAO Name
-                        {sortBy.includes("dao-name-asc") && <Up />}
-                        {sortBy.includes("dao-name-desc") && <Down />}
-                      </div>
-                    </th>
-                    <th
-                      onClick={() => handleClick("market-cap")}
-                      scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        DAO Token Market Cap
-                        {sortBy.includes("market-cap-asc") && <Up />}
-                        {sortBy.includes("market-cap-desc") && <Down />}
-                      </div>
-                    </th>
-                    <th
-                      onClick={() => handleClick("airdrop-amount")}
-                      scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        Airdrop Amount (tokens)
-                        {sortBy.includes("airdrop-amount-asc") && <Up />}
-                        {sortBy.includes("airdrop-amount-desc") && <Down />}
-                      </div>
-                    </th>
-                    <th
-                      onClick={() => handleClick("airdrop-amount-dollars")}
-                      scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        Airdrop Amount ($)
-                        {sortBy.includes("airdrop-amount-dollars-asc") && (
-                          <Up />
-                        )}
-                        {sortBy.includes("airdrop-amount-dollars-desc") && (
-                          <Down />
-                        )}
-                      </div>
-                    </th>
-                    <th
-                      onClick={() => handleClick("percent-of-market-cap")}
-                      scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 cursor-pointer">
-                      <div className="flex items-center gap-1">
-                        airdrop % of market cap
-                        {sortBy.includes("percent-of-market-cap-asc") && <Up />}
-                        {sortBy.includes("percent-of-market-cap-desc") && (
-                          <Down />
-                        )}
-                      </div>
-                    </th>
+                    <TableHeading sortKeyName="dao-name" handleClick={handleClick} displayName="DAO Name" sortBy={sortBy} />
+                    <TableHeading sortKeyName="market-cap" handleClick={handleClick} displayName="DAO Token Market Cap" sortBy={sortBy} />
+                    <TableHeading sortKeyName="airdrop-amount" handleClick={handleClick} displayName="Airdrop Amount (tokens)" sortBy={sortBy} />
+                    <TableHeading sortKeyName="airdrop-amount-dollars" handleClick={handleClick} displayName="Airdrop Amount ($)" sortBy={sortBy} />
+                    <TableHeading sortKeyName="percent-of-market-cap" handleClick={handleClick} displayName="Airdrop % of market cap" sortBy={sortBy} />
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white">
@@ -121,8 +85,6 @@ const Table = ({ daos, arbPrice, setSortBy, sortBy }) => {
                           {Number(
                             dao.airdropAmount.replace(",", "")
                           ).toLocaleString()}
-                          {/* <div className="text-gray-900">{person.title}</div>
-                        <div className="text-gray-500">{person.department}</div> */}
                         </td>
                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                           <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
