@@ -9,13 +9,39 @@ import axios from "axios";
 import Tabs from "../components/tabs";
 import { getMcaps } from "../utils/getMcap";
 
-export default function Home() {
+export function maxAgeForNext(minutesForRollover = [22]) {
+  // minutesForRollover is an array of minutes in the hour that we want to revalidate
+  const currentMinute = new Date().getMinutes();
+  const currentSecond = new Date().getSeconds();
+  const nextMinute = minutesForRollover.find((m) => m > currentMinute) ?? Math.min(...minutesForRollover) + 60;
+  const maxAge = nextMinute * 60 - currentMinute * 60 - currentSecond;
+  return maxAge;
+}
+
+export async function getStaticProps() {
+  const ids = airdropTotals2.map((dao) => dao["cg-id"]).filter((id) => id !== "" && id !== "null") || [];
+  const mcaps = await getMcaps(ids);
+  const updatedDaos = airdropTotals2.map((dao) => {
+    const mcap = mcaps[dao["cg-id"]] || 0;
+    return {
+      ...dao,
+      mcap,
+    };
+  });
+  return {
+    props: {
+      updatedDaos,
+    },
+    revalidate: maxAgeForNext([22]),
+  };
+}
+
+export default function Home({ updatedDaos }) {
   const [activeTab, setActiveTab] = useState(0);
   const [actualArbPrice, setActualArbPrice] = useState(1.1);
   const [customArbPrice, setCustomArbPrice] = useState(1.1);
   const [displayPrice, setDisplayPrice] = useState(1.1);
-  const [airdropData, setAirdropData] = useState(airdropTotals2);
-  const [daoMcap, setDaoMcap] = useState({});
+  const [airdropData, setAirdropData] = useState(updatedDaos);
   const [sortBy, setSortBy] = useState("airdrop-amount-desc");
 
   // dao-name
@@ -27,24 +53,16 @@ export default function Home() {
     const exclData = airdropData.filter((dao) => dao.mcap === 0);
     switch (sortBy) {
       case "airdrop-amount-desc":
-        setAirdropData(
-          [...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount)
-        );
+        setAirdropData([...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount));
         break;
       case "airdrop-amount-asc":
-        setAirdropData(
-          [...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount)
-        );
+        setAirdropData([...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount));
         break;
       case "airdrop-amount-dollars-desc":
-        setAirdropData(
-          [...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount)
-        );
+        setAirdropData([...airdropData].sort((a, b) => b.airdropAmount - a.airdropAmount));
         break;
       case "airdrop-amount-dollars-asc":
-        setAirdropData(
-          [...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount)
-        );
+        setAirdropData([...airdropData].sort((a, b) => a.airdropAmount - b.airdropAmount));
         break;
       case "market-cap-desc":
         setAirdropData(
@@ -69,18 +87,10 @@ export default function Home() {
         );
         break;
       case "dao-name-desc":
-        setAirdropData(
-          [...data]
-            .sort((a, b) => b.daoName.localeCompare(a.daoName))
-            .concat(exclData)
-        );
+        setAirdropData([...data].sort((a, b) => b.daoName.localeCompare(a.daoName)).concat(exclData));
         break;
       case "dao-name-asc":
-        setAirdropData(
-          [...data]
-            .sort((a, b) => a.daoName.localeCompare(b.daoName))
-            .concat(exclData)
-        );
+        setAirdropData([...data].sort((a, b) => a.daoName.localeCompare(b.daoName)).concat(exclData));
         break;
       case "percent-of-market-cap-desc":
         setAirdropData(
@@ -88,14 +98,11 @@ export default function Home() {
             .sort((a, b) => {
               if (!a.mcap && b.mcap) return -1;
               if (a.mcap && !b.mcap) return 1;
-              const arbPrice =
-                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const arbPrice = activeTab === 0 ? actualArbPrice : customArbPrice;
               const AairdropAmountDollars = a.airdropAmount * arbPrice;
-              const ApercentOfMcap =
-                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+              const ApercentOfMcap = (AairdropAmountDollars / a.mcap.market_cap) * 100;
               const BairdropAmountDollars = b.airdropAmount * arbPrice;
-              const BpercentOfMcap =
-                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+              const BpercentOfMcap = (BairdropAmountDollars / b.mcap.market_cap) * 100;
               return BpercentOfMcap - ApercentOfMcap;
             })
             .concat(exclData)
@@ -107,15 +114,12 @@ export default function Home() {
             .sort((a, b) => {
               if (a.mcap && !b.mcap) return -1;
               if (!a.mcap && b.mcap) return 1;
-              const arbPrice =
-                activeTab === 0 ? actualArbPrice : customArbPrice;
+              const arbPrice = activeTab === 0 ? actualArbPrice : customArbPrice;
               const AairdropAmountDollars = a.airdropAmount * arbPrice;
-              const ApercentOfMcap =
-                (AairdropAmountDollars / a.mcap.market_cap) * 100;
+              const ApercentOfMcap = (AairdropAmountDollars / a.mcap.market_cap) * 100;
 
               const BairdropAmountDollars = b.airdropAmount * arbPrice;
-              const BpercentOfMcap =
-                (BairdropAmountDollars / b.mcap.market_cap) * 100;
+              const BpercentOfMcap = (BairdropAmountDollars / b.mcap.market_cap) * 100;
 
               return ApercentOfMcap - BpercentOfMcap;
             })
@@ -123,39 +127,19 @@ export default function Home() {
         );
         break;
     }
-  }, [sortBy]);
+  }, [activeTab, actualArbPrice, airdropData, customArbPrice, sortBy]);
 
   const setSort = (sortType) => {
     setSortBy(sortType);
   };
 
   useEffect(() => {
-    // fetch arb price every 7 seconds
+    // fetch arb price every 10min
     getArbPrice();
-    const interval = setInterval(() => getArbPrice(), 7000);
+    const interval = setInterval(() => getArbPrice(), 10 * 60 * 1000);
     return () => {
       clearInterval(interval);
     };
-  }, []);
-
-  useEffect(() => {
-    (async () => {
-      const ids =
-        airdropData
-          .map((dao) => dao["cg-id"])
-          .filter((id) => id !== "" && id !== "null") || [];
-      const mcaps = await getMcaps(ids);
-
-      const updatedDaos = airdropData.map((dao) => {
-        const mcap = mcaps[dao["cg-id"]] || 0;
-        return {
-          ...dao,
-          mcap,
-        };
-      });
-
-      setAirdropData(updatedDaos);
-    })();
   }, []);
 
   // console.log(airdropData);
@@ -165,7 +149,7 @@ export default function Home() {
     if (activeTab === 0) {
       setDisplayPrice(actualArbPrice);
     }
-  }, [actualArbPrice]);
+  }, [activeTab, actualArbPrice]);
 
   const onChange = (idx) => {
     setActiveTab(idx);
@@ -177,16 +161,14 @@ export default function Home() {
     } else {
       setDisplayPrice(customArbPrice);
     }
-  }, [activeTab]);
+  }, [activeTab, actualArbPrice, customArbPrice]);
 
   const getArbPrice = async () => {
     console.log("getting price");
     const { data } = await axios.get(
       "https://coins.llama.fi/prices/current/arbitrum:0x912ce59144191c1204e64559fe8253a0e49e6548?searchWidth=4h"
     );
-    setActualArbPrice(
-      data.coins["arbitrum:0x912ce59144191c1204e64559fe8253a0e49e6548"].price
-    );
+    setActualArbPrice(data.coins["arbitrum:0x912ce59144191c1204e64559fe8253a0e49e6548"].price);
   };
 
   const handleChange = (e) => {
@@ -199,25 +181,10 @@ export default function Home() {
         <div className="flex justify-start items-center bg-white shadow-lg text-black rounded-full py-2 px-3 gap-1">
           <div>Made by</div>
           <a href="https://twitter.com/0xstrobe" target="_blank" rel="noopener">
-            <Image
-              src="/strobie.jpeg"
-              width="24"
-              height="24"
-              alt="logo"
-              className="rounded-full overflow-hidden"
-            />
+            <Image src="/strobie.jpeg" width="24" height="24" alt="logo" className="rounded-full overflow-hidden" />
           </a>
-          <a
-            href="https://twitter.com/tendeeno_"
-            target="_blank"
-            rel="noopener">
-            <Image
-              src="/tendeeno.jpeg"
-              width="24"
-              height="24"
-              alt="logo"
-              className="rounded-full overflow-hidden"
-            />
+          <a href="https://twitter.com/tendeeno_" target="_blank" rel="noopener">
+            <Image src="/tendeeno.jpeg" width="24" height="24" alt="logo" className="rounded-full overflow-hidden" />
           </a>
         </div>
       </div>
@@ -226,29 +193,19 @@ export default function Home() {
           <Tabs onChange={onChange} />
           {activeTab === 0 ? (
             <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
-              <dt className="truncate text-sm font-medium text-gray-500">
-                ARB price
-              </dt>
+              <dt className="truncate text-sm font-medium text-gray-500">ARB price</dt>
               <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900 flex gap-1">
-                <Image src="/arb.webp" alt="arb token" width="32" height="32" />
-                ${actualArbPrice}
+                <Image src="/arb.webp" alt="arb token" width="32" height="32" />${actualArbPrice}
               </dd>
             </div>
           ) : (
             <div className="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
-              <dt className="truncate text-sm font-medium text-gray-500">
-                ARB price
-              </dt>
+              <dt className="truncate text-sm font-medium text-gray-500">ARB price</dt>
               <dd className="mt-1 text-3xl font-semibold tracking-tight text-gray-900 flex gap-1">
                 <Image src="/arb.webp" alt="arb token" width="32" height="32" />
                 <div className="flex">
                   <div>$</div>
-                  <input
-                    type="text"
-                    value={customArbPrice}
-                    onChange={handleChange}
-                    className="bg-gray-100 w-32 rounded"
-                  />
+                  <input type="text" value={customArbPrice} onChange={handleChange} className="bg-gray-100 w-32 rounded" />
                 </div>
               </dd>
             </div>
@@ -256,12 +213,7 @@ export default function Home() {
         </div>
       </div>
       <div className="overflow-x-scroll overflow-y-visible">
-        <Table
-          sortBy={sortBy}
-          setSortBy={setSortBy}
-          daos={airdropData}
-          arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice}
-        />
+        <Table sortBy={sortBy} setSortBy={setSortBy} daos={airdropData} arbPrice={activeTab === 0 ? actualArbPrice : customArbPrice} />
       </div>
     </div>
   );
