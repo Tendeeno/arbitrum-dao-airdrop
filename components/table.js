@@ -11,8 +11,8 @@
 //   // More daos...
 // ];
 
-import { useEffect, useState } from "react";
-import { getMcaps } from "../utils/getMcap";
+// import { useEffect, useState } from "react";
+// import { getMcaps } from "../utils/getMcap";
 import Up from "./icons/up";
 import Down from "./icons/down";
 
