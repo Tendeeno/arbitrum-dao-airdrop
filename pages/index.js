@@ -127,7 +127,7 @@ export default function Home({ updatedDaos }) {
         );
         break;
     }
-  }, [sortBy]);
+  }, [activeTab, actualArbPrice, airdropData, customArbPrice, sortBy]);
 
   const setSort = (sortType) => {
     setSortBy(sortType);
@@ -149,7 +149,7 @@ export default function Home({ updatedDaos }) {
     if (activeTab === 0) {
       setDisplayPrice(actualArbPrice);
     }
-  }, [actualArbPrice]);
+  }, [activeTab, actualArbPrice]);
 
   const onChange = (idx) => {
     setActiveTab(idx);
@@ -161,7 +161,7 @@ export default function Home({ updatedDaos }) {
     } else {
       setDisplayPrice(customArbPrice);
     }
-  }, [activeTab]);
+  }, [activeTab, actualArbPrice, customArbPrice]);
 
   const getArbPrice = async () => {
     console.log("getting price");
